@@ -88,7 +88,7 @@ alias sclstart="sudo systemctl start"
 alias sclstatus="sudo systemctl status"
 alias sclrestart="sudo systemctl restart"
 alias sclstop="sudo systemctl stop"
-alias motd="clear; /etc/motd.tcl"
+alias motd="clear; /home/ben/motd.tcl"
 
 # MOTD
-if [[ -e /etc/motd.tcl ]]; then motd; fi
+if [[ -e /home/ben/motd.tcl ]]; then motd; fi
