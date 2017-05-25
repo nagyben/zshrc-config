@@ -89,6 +89,8 @@ alias sclstatus="sudo systemctl status"
 alias sclrestart="sudo systemctl restart"
 alias sclstop="sudo systemctl stop"
 alias motd="clear; /etc/motd.tcl"
+alias supdate="sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove"
+
 
 # MOTD
 if [[ -e /etc/motd.tcl ]]; then motd; fi
