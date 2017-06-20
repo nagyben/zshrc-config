@@ -89,8 +89,8 @@ alias sclstatus="sudo systemctl status"
 alias sclrestart="sudo systemctl restart"
 alias sclstop="sudo systemctl stop"
 alias motd="clear; /home/ben/motd.tcl"
-alias supdate="sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove --purge"
 alias sapt="sudo apt"
+alias supdate="sapt update && sapt upgrade -y && sapt dist-upgrade -y && sapt autoremove --purge -y"
 
 # MOTD
 if [[ -e /home/ben/motd.tcl ]]; then motd; fi
