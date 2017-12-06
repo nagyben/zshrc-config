@@ -83,6 +83,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias sudo="sudo "
 alias scl="sudo systemctl"
 alias sclstart="sudo systemctl start"
 alias sclstatus="sudo systemctl status"
@@ -91,6 +93,7 @@ alias sclstop="sudo systemctl stop"
 alias motd="clear; /home/ben/motd.tcl"
 alias sapt="sudo apt"
 alias supdate="sapt update && sapt upgrade -y && sapt dist-upgrade -y && sapt autoremove --purge -y"
+alias duh="du -h --max-depth=1 | sort -h"
 
 # MOTD
 if [[ -e /home/ben/motd.tcl ]]; then motd; fi
